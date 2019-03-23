@@ -6,14 +6,15 @@ class Dog
 
   def initialize(name)
     @name = name
-    @@all << self
+    @@all << name
   end
 
   def self.all
-    puts @@all.each
+    puts @@all
   end
 
   def self.clear_all
     @@all = []
+    
   end
 end #End of class
