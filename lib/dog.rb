@@ -13,7 +13,7 @@ class Dog
     puts @@all
   end
 
-  def clear_all
+  def self.clear_all
     @@all = []
   end
 end #Endo of class
