@@ -6,14 +6,15 @@ class Dog
 
   def initialize(name)
     @name = name
-    @@all << self
+    @@all << name
   end
 
   def self.all
-    @@all
+    @@all.each {|pup| puts "-#{pup}"}
   end
 
-  def clear_all
+  def self.clear_all
     @@all = []
+
   end
-end #Endo of class
+end #End of class
